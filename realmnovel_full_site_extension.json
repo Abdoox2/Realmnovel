@@ -1,0 +1,25 @@
+{
+    "name": "RealmNovel Full",
+    "url": "https://www.realmnovel.com",
+    "version": "1.0.2",
+    "lang": "ar",
+    "author": "CustomGPT",
+    "description": "Full dynamic extension for all novels on RealmNovel.com.",
+    "entry": {
+        "type": "dynamic",
+        "baseUrl": "https://www.realmnovel.com",
+        "searchUrl": "/search?keyword=",
+        "searchSelector": ".novel-list .novel-item",
+        "searchTitleSelector": ".novel-title",
+        "searchUrlSelector": "a[href]",
+        "searchCoverSelector": "img",
+        "novelPage": {
+            "titleSelector": "h1.novel-title",
+            "authorSelector": ".author",
+            "coverSelector": ".novel-cover img",
+            "chapterListSelector": ".chapter-list a",
+            "chapterTitleSelector": ".chapter-title",
+            "chapterContentSelector": ".chapter-content"
+        }
+    }
+}
